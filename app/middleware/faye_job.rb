@@ -12,8 +12,6 @@ class FayeJoy
 
     return callback.call(message) unless message['subscription'] == '/data' || message['subscription'] == '/*' || message['subscription'] == '/**'
 
-
-
     # Call the server back now we're done
     callback.call(message)
   end
